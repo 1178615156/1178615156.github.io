@@ -4,12 +4,15 @@ module.exports = {
     theme: '@vuepress/theme-blog',
     // search: false,
 
-    nav: [
-        {
-            text: "blog",
-            link: "/"
-        }
-    ],
+    themeConfig:{
+        nav: [
+            {
+                text: "blog",
+                link: "/"
+            }
+        ],
+    }
+
 
     // themeConfig:{
     //     navbar: false,
