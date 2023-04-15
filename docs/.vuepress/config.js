@@ -1,7 +1,8 @@
 module.exports = {
-    title: 'Hello VuePress',
+    // title: 'Hello VuePress',
     description: 'Just playing around',
     theme: '@vuepress/theme-blog',
+    search: false
 
     // themeConfig:{
     //     navbar: false,
