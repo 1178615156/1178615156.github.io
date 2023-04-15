@@ -5,12 +5,11 @@
   "repository": "git@github.com:1178615156/1178615156.github.io.git",
   "license": "MIT",
   "devDependencies": {
+    "@vuepress/theme-blog": "^2.3.3",
     "vuepress": "^1.9.9"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   }
-
-
 }
