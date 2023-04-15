@@ -8,7 +8,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: vuepress-deploy
-        uses: jenkey2011/vuepress-deploy@master
+        uses: yujieshui
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           TARGET_REPO: 1178615156/1178615156.github.io
