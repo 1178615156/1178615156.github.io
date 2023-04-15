@@ -4,10 +4,10 @@ module.exports = {
     theme: '@vuepress/theme-blog',
     // search: false,
 
-    nav:[
+    nav: [
         {
-            'text':'Blog',
-            'link':'/'
+            text: "blog",
+            link: "/"
         }
     ],
 
