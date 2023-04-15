@@ -1,14 +1,15 @@
-const path = require("path");
-
 module.exports = {
-    // title: 'Hello VuePress',
-    description: 'Just playing around',
+    title: '',
+    description: '',
     theme: '@vuepress/theme-blog',
     // search: false,
 
-    alias: {
-        "@img": path.resolve(__dirname, "../img")
-    }
+    nav:[
+        {
+            'text':'Blog',
+            'link':'/'
+        }
+    ],
 
     // themeConfig:{
     //     navbar: false,
