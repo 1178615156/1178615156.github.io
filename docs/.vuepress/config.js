@@ -1,7 +1,6 @@
 module.exports = {
     title: '',
     description: '',
-    base: '/docs/',
     theme: '@vuepress/theme-blog',
     // search: false,
 
