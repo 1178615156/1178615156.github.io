@@ -4,7 +4,7 @@ title:  "解决chatgbt-Access denied-IP被禁问题"
 date:   2023-04-05
 ---
 ### 现象
-![7896180-f0c0aff822af0bab.png](7896180-f0c0aff822af0bab.png)
+![7896180-f0c0aff822af0bab.png](@img/7896180-f0c0aff822af0bab.png)
 
 这个Access denied错误其实是cloudflare返回的，只要绕开cloudflare的校验就行。
 
