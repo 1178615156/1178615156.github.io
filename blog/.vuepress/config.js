@@ -1,4 +1,5 @@
-import {googleAnalyticsPlugin} from '@vuepress/plugin-google-analytics'
+// import {googleAnalyticsPlugin} from '@vuepress/plugin-google-analytics'
+const googleAnalyticsPlugin = require('@vuepress/plugin-google-analytics');
 
 module.exports = {
     plugins: [
