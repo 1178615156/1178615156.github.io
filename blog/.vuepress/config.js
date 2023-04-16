@@ -1,10 +1,17 @@
+import {googleAnalyticsPlugin} from '@vuepress/plugin-google-analytics'
+
 module.exports = {
+    plugins: [
+        googleAnalyticsPlugin({
+            id: 'G-K78EX03G2S'
+        })
+    ],
     title: '',
     description: '',
     theme: '@vuepress/theme-blog',
     // search: false,
 
-    themeConfig:{
+    themeConfig: {
         nav: [
             {
                 text: "blog",
