@@ -5,6 +5,7 @@ module.exports = {
     plugins: {
         '@vuepress/plugin-google-analytics': {
             id: 'G-K78EX03G2S',
+            ga: 'G-K78EX03G2S',
         },
     },
     title: '',
