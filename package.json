@@ -5,6 +5,7 @@
   "repository": "git@github.com:1178615156/1178615156.github.io.git",
   "license": "MIT",
   "devDependencies": {
+    "vue-template-compiler": "^2.0.0",
     "@vuepress/theme-blog": "^2.3.3",
     "vuepress": "^1.9.9"
   },
