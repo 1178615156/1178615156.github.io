@@ -1,6 +1,7 @@
 ---
 layout: post
 date:   2023-04-05
+title:  "在只运行HTTP代理访问外网的情况下,安装VPN(wireguard)突破访问限制"
 ---
 
 # 在只运行HTTP代理访问外网的情况下,安装VPN(wireguard)突破访问限制
