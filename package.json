@@ -10,7 +10,7 @@
     "vuepress": "^1.9.9"
   },
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "blog:dev": "vuepress dev blog",
+    "blog:build": "vuepress build blog"
   }
 }
