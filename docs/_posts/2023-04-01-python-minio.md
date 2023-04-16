@@ -1,9 +1,8 @@
 ---
 layout: post
-
+title:  "如何让minio的python客户端每次sign结果一致"
+date:   2023-04-01
 ---
-# 如何让minio的python客户端每次sign结果一致
-
 
 ## 背景
 由于对于同一个文件minio每次签名生成的url的参数都不一致,会导致浏览器不能正常的缓存文件,每次都要重新请求.
