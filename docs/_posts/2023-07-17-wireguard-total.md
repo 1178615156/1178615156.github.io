@@ -2,6 +2,7 @@
 layout: post
 title:  wireguard汇总
 date: 2023-04-17
+comments: true
 ---
 [wireguard](https://www.wireguard.com/quickstart/)是一个好用的VPN,基本介绍略,汇总下遇到的问题
 
