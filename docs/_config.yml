@@ -56,3 +56,8 @@ header_pages:
 # Set to `true` to show excerpts on the homepage.
 #
 show_excerpts: true
+
+site:
+  disqus:
+    shortname: https-1178615156-github-io
+
