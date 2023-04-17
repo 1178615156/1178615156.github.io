@@ -7,9 +7,9 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-#author:
-#  name: GitHub User
-#  email: your-email@domain.com
+author:
+ name: 1178615156
+ email: 1178615156@gmail.com
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
