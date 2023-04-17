@@ -40,7 +40,7 @@ Set-NetIPInterface -Forwarding Enabled
 
 ---
 
-## over tcp by wstunnel
+## 将wireguard的UDP数据包装成TCP
 wg是UDP来传输数据,但是有的时候防火墙可能对UDP数据包有限制,会drop掉所有的UDP数据包.
 
 wg的官网上介绍了,wg本身不支持TCP,这种情况下需要能够把UDP数据包包装成TCP数据包才行.
@@ -68,7 +68,7 @@ wg的官网上介绍了,wg本身不支持TCP,这种情况下需要能够把UDP�
 
 
 ---
-## over http proxy by wstunnel
+## 将wireguard的流量走http-proxy
 
 
 ### 背景
