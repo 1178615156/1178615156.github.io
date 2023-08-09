@@ -29,7 +29,7 @@ yum install --downloadonly --downloaddir=/docker-rpm/ \
 exit
 ```
 
-## openEuler:20
+## openEuler:22
 
 ```shell
 
