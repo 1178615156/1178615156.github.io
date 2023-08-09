@@ -1,6 +1,9 @@
 ---
 layout: post
 title:  多个spring data源(jdbc/jpa/redis/mongodb)共同使用时冲突问题
+date: 2023-04-18
+comments: true
+
 ---
 当项目里面同时使用了多个spring data源的时候spring会不知道加载那个。
 
