@@ -16,7 +16,7 @@ calico-node pod failing to run: Bad return code from ipset list - Kernel error r
 
 #### [](https://github.com/1178615156/pages/blob/gh-pages/note/%E5%9C%A8ARM%E6%9C%BA%E5%99%A8%E4%B8%8A%E8%BF%90%E8%A1%8Ccalico%E6%8A%A5ipset%E5%BC%82%E5%B8%B8.md#calico%E7%9A%84bug)calico的BUG
 
-可以通过升级版本解决 [projectcalico/calico#5011](https://github.com/projectcalico/calico/issues/5011)
+可以通过升级版本解决[projectcalico/calico#5011](https://github.com/projectcalico/calico/issues/5011)
 
 #### [](https://github.com/1178615156/pages/blob/gh-pages/note/%E5%9C%A8ARM%E6%9C%BA%E5%99%A8%E4%B8%8A%E8%BF%90%E8%A1%8Ccalico%E6%8A%A5ipset%E5%BC%82%E5%B8%B8.md#%E5%86%85%E6%A0%B8%E7%BC%BA%E5%B0%91%E4%BA%86ipset)内核缺少了ipset
 
