@@ -367,7 +367,7 @@ layout: post
   "allPublicFields": true
 }
 ```
-
+ - 或：https://stackoverflow.com/questions/74908739/spring-boot-3-native-image-with-jackson
 
 ## 4.0 启动
 
