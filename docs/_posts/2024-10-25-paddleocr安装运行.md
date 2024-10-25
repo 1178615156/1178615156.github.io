@@ -29,7 +29,7 @@ requests
 albumentations==1.4.10
 albucore==0.0.13
 ```
-- 使用了当没写在`requirements.txt`
+- 使用了但没写在`requirements.txt`
 ```
 python-docx
 lxml
