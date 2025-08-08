@@ -3,11 +3,13 @@
 1. 首先安装微信:3.9.12.51
 2. 微信历史版本可以在这里下载:https://github.com/tom-snow/wechat-windows-versions
 3. 接着安装Python基础依赖:
+
 ```bash
 pip install wcferry==39.5.1.0 loguru fastapi[standard] pydantic
 ```
 
-4. 写Python代码,保存到`weixin.py`中
+4. 写Python代码,保存到`weixin.py`中:
+
 ```python
 import base64
 import os
@@ -141,7 +143,7 @@ if __name__ == '__main__':
         wcf.cleanup()
 
 ```
-4. 启动python weixin.py
+4. 启动`python weixin.py`
 5. 测试浏览器里访问,获取通讯录:`http://localhost:5000/wcf/get_contacts`
-5. 测试浏览器里访问,获取消息:`http://localhost:5000/wcf/get_msg`
+6. 测试浏览器里访问,获取消息:`http://localhost:5000/wcf/get_msg`
    
