@@ -1,0 +1,48 @@
+# 2025-10-14-定时启动飞书打卡
+
+1. 首先放一部废弃手机插上USB,并开启开发者模式
+2. 下载ADB: https://developer.android.com/tools/releases/platform-tools?hl=zh-cn
+3. 假设ADB放在`D:/platform-tools`下
+
+4. 测试是否正常连上:
+```
+    D:\platform-tools\adb.exe devices -l 
+```
+5. 测试唤醒屏幕,注意需要去掉开屏密码
+```
+    D:\platform-tools\adb.exe shell input keyevent KEYCODE_POWER
+```
+6. 将以下命令写到`task.ps1`文件中
+```
+$trigger1 = New-JobTrigger -Daily -At "8:25 AM"
+$trigger2 = New-JobTrigger -Daily -At "8:40 AM"
+$trigger3 = New-JobTrigger -Daily -At "6:01 PM"
+$trigger4 = New-JobTrigger -Daily -At "8:01 PM"
+
+$action1 = {
+    D:\platform-tools\adb.exe shell input keyevent KEYCODE_POWER
+    Start-Sleep -Seconds 1
+    D:\platform-tools\adb.exe shell am start -n 'com.ss.android.lark/.main.app.MainActivity'
+    Start-Sleep -Seconds 10
+    D:\platform-tools\adb.exe shell input keyevent KEYCODE_POWER
+    Start-Sleep -Seconds 1
+    D:\platform-tools\adb.exe shell am start -n 'com.ss.android.lark/.main.app.MainActivity'
+}
+
+Unregister-ScheduledJob -Name "App1" -Force
+Unregister-ScheduledJob -Name "App2" -Force
+Unregister-ScheduledJob -Name "App3" -Force
+Unregister-ScheduledJob -Name "App4" -Force
+
+Register-ScheduledJob -Name "App1" -Trigger $trigger1 -ScriptBlock $action1
+Register-ScheduledJob -Name "App2" -Trigger $trigger2 -ScriptBlock $action1
+Register-ScheduledJob -Name "App3" -Trigger $trigger3 -ScriptBlock $action1
+Register-ScheduledJob -Name "App4" -Trigger $trigger4 -ScriptBlock $action1
+
+Get-ScheduledJob
+```
+7. 使用`管理员`启动`powershell`,执行
+
+```
+./task.ps1
+```
