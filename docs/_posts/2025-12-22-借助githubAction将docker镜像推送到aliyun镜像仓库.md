@@ -60,10 +60,9 @@ jobs:
 FROM ollama/ollama
 
 ```
+1. 这样action就会根据Dockerfile.ollama去拉去`ollama/ollama`并推送到个人的阿里云镜像
 
-3. 这样action就会根据Dockerfile.ollama去拉去`ollama/ollama`并推送到个人的阿里云镜像
-
-4. 最后在aliyun上的服务器pull并运行:
+2. 最后在aliyun上的服务器pull并运行:
 ```shell
 docker pull registry.cn-hangzhou.aliyuncs.com/a1178615156/ollama:latest
 ```
